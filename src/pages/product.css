@@ -1,0 +1,39 @@
+html,
+body {
+  background-color: #e4e4eb;
+  margin: 0;
+  padding: 0;
+}
+.container {
+  flex-wrap: wrap;
+  display: flex;
+}
+.izquierda {
+  width: 30%;
+  height: 100vh;
+  position: sticky;
+  top: 0;
+  background-color: lightgray;
+  box-shadow: inset -25px 0px 20px 5px rgb(194, 193, 193);
+}
+
+.derecha {
+  flex: 1;
+  width: 70%;
+  padding: 20px;
+  background-color: white;
+}
+
+@media (max-width: 768px) {
+  .izquierda,
+  .derecha {
+    width: 100%;
+    overflow: visible;
+  }
+  .derecha {
+    height: 100%;
+  }
+  .izquierda {
+    position: relative;
+  }
+}

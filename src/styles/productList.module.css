@@ -1,0 +1,88 @@
+.cards {
+  flex: 0 0 calc(31% - 30px);
+  margin-bottom: 16px;
+  box-sizing: border-box;
+  background-color: rgb(241, 238, 238);
+  border-radius: 15px;
+  margin: 20px;
+  padding: 10px;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+.productList {
+  width: 95%;
+  position: relative;
+}
+.productList p.total {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin-top: 30px;
+  margin-right: 15px;
+}
+
+.placeList {
+  padding: 50px 0;
+  height: calc(100% - 100px);
+}
+.cardText p {
+  margin: 0;
+  color: rgb(146, 141, 141);
+}
+.cardText a {
+  text-decoration: none;
+  color: rgb(100, 98, 98);
+}
+.cardText strong {
+  color: black;
+}
+.controls {
+  display: flex;
+  justify-content: space-around;
+  width: 60%;
+  margin: 17px auto;
+}
+
+.noItemsMessage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 75vh;
+  width: 100%;
+}
+
+.noItemsMessage p {
+  color: rgb(146, 141, 141);
+}
+.controls button {
+  border: 2px solid rgb(174, 113, 231);
+  border-radius: 15px;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+.controls button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+/* 
+
+
+
+
+
+@media (max-width: 1050px) {
+  .productList {
+    width: 100%;
+    float: none;
+    overflow: visible;
+  }
+}
+@media (max-width: 768px) {
+  .cards {
+    width: 100%;
+  }
+} */
